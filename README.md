@@ -9,10 +9,12 @@ The bot also uses WebSockets to allow for a higher amount of efficiency.
 </p>
 2. **/stats** returns the latest market data captured of the specified coin.
  
+<p align="center">
 <img width="414" alt="stats" src="https://user-images.githubusercontent.com/51364789/114159815-42ecd380-9937-11eb-8ff1-579c4915ecc8.png">
-
+</p>
 3. **/news** returns the latest news of a specified coin. If a coin is not specified /news will return the top stories of the cryptocurrency market.
-
+<p align="center">
 <img width="414" alt="news" src="https://user-images.githubusercontent.com/51364789/114159722-22bd1480-9937-11eb-9bd2-5961de308281.png">
+</p>
 
 The bot is available on [Telegram](https://t.me/DoggeCoinBot). Please allow for a minute for the bot to wake up as it goes to sleep after 30 mins of inactivity.
