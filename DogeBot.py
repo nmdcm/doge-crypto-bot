@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import logging
 import telegram
+from telegram import Update, ParseMode
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import json
 import os
@@ -12,9 +13,9 @@ import random
 
 #Retrieving API tokens
 PORT = int(os.environ.get('PORT', 5000))
-TOKEN = os.environ['TOKEN']
-NEWS_TOKEN = os.environ['NEWS_TOKEN']
-CMC_TOKEN = os.environ['CMC_TOKEN']
+TOKEN = os.environ['2032391705:AAEn8QLbdcCPpo7dhTWPDzudB6FuTlhztDw']
+NEWS_TOKEN = os.environ['03c07fd3d77daedfe0a18b46842876f8ca10eb3c']
+CMC_TOKEN = os.environ['b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c']
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
@@ -136,7 +137,7 @@ def main():
 
     # Start the Bot
     updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN)
-    updater.bot.setWebhook('https://dogecoinbot.herokuapp.com/' + TOKEN)
+    updater.bot.setWebhook('https://cryptstatsbotdene.herokuapp.com/' + TOKEN)
 
     updater.idle()
 
